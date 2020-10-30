@@ -16,10 +16,14 @@ function App() {
         setLogData,
       }}
     >
-      <button onClick={() => setNumberOfLogs((prev) => prev + 1)}>
+      <button
+        data-testid="increment-logs"
+        onClick={() => setNumberOfLogs((prev) => prev + 1)}
+      >
         Add new log
       </button>
       <button
+        data-testid="update-logs"
         onClick={() => setLogData((prev) => new Date().getTime().toString())}
       >
         Update Log data

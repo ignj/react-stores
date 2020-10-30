@@ -34,7 +34,7 @@ export type LogsState = {
   logData: string;
 };
 
-const initialState: LogsState = {
+export const initialState: LogsState = {
   numberOfLogs: 0,
   logData: "",
 };

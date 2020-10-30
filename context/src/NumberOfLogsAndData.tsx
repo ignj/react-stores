@@ -6,11 +6,11 @@ const NumberOfLogsAndData = React.memo(() => {
   const logsAndDatarenders = useRef(0);
 
   return (
-    <div>
+    <div data-testid="container-number-of-logs-and-data">
       <h1>NumberOfLogs and LogData component</h1>
 
-      <div>NumberOfLogs: {numberOfLogs}</div>
-      <div>logData: {logData}</div>
+      <div data-testid="number-of-logs">NumberOfLogs: {numberOfLogs}</div>
+      <div data-testid="log-data">logData: {logData}</div>
       <div>NumberOfLogs renders: {logsAndDatarenders.current++}</div>
     </div>
   );

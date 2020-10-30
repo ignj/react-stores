@@ -6,10 +6,10 @@ const NumberOfLogs: React.FC<IProps> = ({ numberOfLogs }) => {
   const logsRenders = useRef(0);
 
   return (
-    <div>
+    <div data-testid="container-number-of-logs">
       <h1>NumberOfLogs component</h1>
 
-      <div>NumberOfLogs: {numberOfLogs}</div>
+      <div data-testid="number-of-logs">NumberOfLogs: {numberOfLogs}</div>
       <div>NumberOfLogs renders: {logsRenders.current++}</div>
     </div>
   );

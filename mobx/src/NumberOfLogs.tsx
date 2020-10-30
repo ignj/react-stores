@@ -7,11 +7,13 @@ const NumberOfLogs = () => {
   const logsRenders = useRef(0);
 
   return (
-    <div>
+    <div data-testid="container-number-of-logs">
       <h1>NumberOfLogs component</h1>
 
-      <div>NumberOfLogs: {numberOfLogs}</div>
-      <div>NumberOfLogs renders: {logsRenders.current++}</div>
+      <div data-testid="number-of-logs">NumberOfLogs: {numberOfLogs}</div>
+      <div data-testid="number-of-renders">
+        NumberOfLogs renders: {logsRenders.current++}
+      </div>
     </div>
   );
 };
